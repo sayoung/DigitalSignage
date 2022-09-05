@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('messages', function (Blueprint $table) {
             $table->id();
             $table->text("body");
-            $table->string("client");
+            $table->ipAddress("ip")->default("0.0.0.0");
             $table->timestamps();
         });
     }
