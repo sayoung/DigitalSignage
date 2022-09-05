@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [MessageController::class, 'index']);
+Route::post('/create', [MessageController::class, 'store']);
